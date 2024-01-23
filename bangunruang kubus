@@ -1,0 +1,24 @@
+class luasvolumekubus{
+  public static void main(String args[]){
+ Scanner input = new Scanner(System.in).useLocale(Locale.US);
+       
+    System.out.println("# Program Java Luas Permukaan & Volume Kubus #");
+    System.out.println("==============================================");
+    System.out.println();
+      
+    double sisi, luas_permukaan, volume;
+  
+    System.out.print("Input panjang sisi kubus: ");
+    sisi = input.nextDouble();
+    System.out.println();
+     
+    luas_permukaan = 6 * (sisi * sisi);
+    luas_permukaan = Math.round(luas_permukaan * 100)/100.0;
+     
+    volume = sisi * sisi * sisi;
+    volume = Math.round(volume * 100)/100.0;
+     
+    System.out.println("Luas permukaan kubus = "+luas_permukaan);
+    System.out.println("Volume kubus = "+volume);
+  
+    input.close();
