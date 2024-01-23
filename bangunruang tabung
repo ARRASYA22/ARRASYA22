@@ -1,0 +1,25 @@
+class luasvolumetabung(
+  public static void main(String args[]){
+ Scanner input = new Scanner(System.in).useLocale(Locale.US);
+    System.out.println("# Program Java Luas Permukaan & Volume Tabung #");
+    System.out.println("===============================================");
+    System.out.println();
+     
+    double jari2, tinggi, luas_permukaan, volume;
+  
+    System.out.print("Input jari-jari tabung: ");
+   jari2 = input.nextDouble();
+   System.out.print("Input tinggi tabung: ");
+    tinggi = input.nextDouble();
+     
+    System.out.println();
+     
+    luas_permukaan = 2 * (22.0/7.0) * jari2 * (jari2 + tinggi);
+    luas_permukaan = Math.round(luas_permukaan * 100)/100.0;
+     
+    volume = (22.0/7.0) * tinggi * jari2 * jari2;
+    volume = Math.round(volume * 100)/100.0;
+      
+    System.out.println("Luas permukaan Tabung = "+luas_permukaan);
+    System.out.println("Volume Tabung = "+volume);  
+  input.close();
